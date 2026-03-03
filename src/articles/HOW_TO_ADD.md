@@ -17,4 +17,9 @@
    - Import your component: `import YourArticle from "@/articles/your-slug";`
    - Add it to `articleComponents`: `"your-slug": YourArticle,`
 
+4. **Create the static HTML fallback** at `public/articles/your-slug/index.html` for SEO/no-JS crawlers:
+   - Copy an existing article's HTML file as a template
+   - Update the `<title>`, meta tags, and `<noscript>` body with your article's content
+   - This ensures crawlers and no-JS browsers see the article text and links
+
 That's it — the homepage Articles section and the `/articles/your-slug` route will work automatically.
